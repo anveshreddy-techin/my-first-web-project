@@ -1,0 +1,32 @@
+<!-- example on JS control statements -->
+<h3>demo on switch 27</h3>
+<script>
+  //sup all datatypes
+  let x;
+  x=10.55;
+  switch(x)
+  {
+	case 10.55: document.write(`Yes<br>`);
+			break;
+	default: document.write(`No<br>`);
+  }
+  
+  //sup conditions
+  let y=-15;
+  switch(y>=0)
+  {
+	case true: document.write(`+Ve<br>`);
+			  break;
+	case false: document.write(`-Ve<br>`);
+  }
+  
+  //sup to use variables in "case"
+  let i=40, j=20, n=40;
+  switch(n)
+  {
+    case i: document.write(`I`); break;
+	case j: document.write(`J`); break;
+	default: document.write("none");
+  } 
+</script>
+<hr>

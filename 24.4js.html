@@ -1,0 +1,114 @@
+<!-- example on JS variables -->
+ <mark>js11</mark>------------------------------------------------------------------------------------------------------------------------------------------------------------
+<h3>demo on non-primitive datatypes</h3>
+<script>
+  var d = new Date();
+  let a = [10,20,30];
+  const ob = {x:11, y:22}
+  const ob2 = new Object();
+  ob2.name="ecam";
+  
+  document.write(d,'<br>');
+  document.write(a,'<br>');  
+  document.write(ob.x,'<br>',ob.y);  
+    document.write('<br>',ob2.name,'<br>');
+</script>
+<hr>
+<mark>js12</mark>----------------------------------------------------------------------------------------------------------------------------------------------
+<!-- example on JS  -->
+<h3>demo on operators</h3>
+<script>
+  let l=25, s=9;
+  //let a=10,b="ram",c=true;
+  
+  //arithmatic ope  +, -, *, /, %, ** 
+  document.write(l+s, '<br>');
+  document.write(s*3, '<br>');
+  document.write(s**3, '<br>');
+  document.write(l/6, '<br>');
+  document.write( (l/6).toFixed(3), '<br>');
+  
+  //relational ope  >, <, >=, <=, ==, !=, ===, !==
+  document.write(l>=0, '<br>');
+  let z="9";
+  document.write(s==z, '<br>');//9=="9"=>"9"=="9"=>T
+  document.write(s===z, '<br>');//9=="9" =>F
+  document.write(s!=z, '<br>');//9!="9"=>"9"!="9"=>F
+  document.write(s!==z, '<br>');//9!=="9" =>T
+  
+  //logical ope		&&	||	!
+  document.write(9>=0 && s<=10, '<br>')
+  document.write(!(l>0), '<bR>');
+  
+  /* assignment ope   =
+	   shorthand ope  +=, -=, *=, /=, %=, **=	*/
+  l+=30;	//l=l+30;
+  s*=10;	//s=s*10;
+  document.write(l,'<bR>',s,'<bR>');
+  
+  //concate ope	  +	
+  document.write("rama"+"rao"+"<br>");
+  document.write(100+"mangos<bR>");
+  document.write(20+true, '<br>');
+  
+  /* increment  ++	 +1		++var		var++
+	dcrement	--	 -1		--var		var--
+							(pre)		(post)	*/
+	l++;  //post
+	document.write(l, '<bR>');
+	++l;  //pre
+	document.write(l, '<bR>');	
+    //let res=10*l++;	//58	570
+	let res=10*++l;		//58	580
+  	document.write(l,'<bR>', res, '<br>');
+
+	/* conditional ope  ?:
+		cond ? statement1 : statement2	*/
+	document.write( s%2===0? "Even number" : "Odd number" ); 
+</script>
+<hr >
+<mark>js12,13</mark>-----------------------------------------------------------------------------------------------------------------------------------------------------------
+<!-- example on JS -->
+<h3>demo on Operator Precedence</h3>
+<script>
+  document.write(10-20%3+5*10, '<br>');
+  document.write(10+5*5-20%3, '<br>');
+   
+  let x=15, y=7;
+  document.write('sum is '+x+y+'<bR>');
+  document.write('sum is '+(x+y)+'<bR>');
+  document.write('sum is ',x+y,'<bR>');
+  
+  document.write('sub is '+x-y+'<br>');
+  document.write('sub is '+(x-y)+'<br>');
+  document.write('sub is ',x-y,'<br>');
+  
+  document.write('product is ' +x*y+'<br>');
+  
+  document.write('res is '+x>y);
+  document.write('<br>res is '+(x>y));
+  document.write('<br>res is ',x>y); 
+</script>
+<hr>
+<mark>js15</mark>-----------------------------------------------------------------------------------------------------------------------------------------------------------
+<!-- example on JS dialogs  -->
+<h3>demo on parsing</h3>
+<script>
+  let n="25", p="7";
+  
+  //auto parsing
+  document.write(n-p, '<br>');
+  document.write(n*p, '<br>');  
+  document.write(n**3, '<br>');  
+  document.write(p/4, '<br>');  
+  document.write(n%p, '<br>');    
+  document.write(++n, '<br>'); 
+  document.write(--p, '<br>');
+  let i="15", j="9";
+  //manual parse
+  let g=parseInt(i)+parseInt(j);
+  document.write(g, '<br>');
+  document.write(+i > +j, '<br>');
+  document.write(+"35" + +"78", '<br>');
+</script>
+<hr>

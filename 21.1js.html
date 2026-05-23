@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS</title>
+    <script type="text/javascript">
+	  document.write("msg from head");
+	</script>
+  </head> 
+  <body>
+	<h2>demo on inline script</h2>	
+	<button onclick="alert('button pushed')">Push here</button>
+	<button onclick="alert('hey, why ur pulling me')">Pull here</button>
+	<h2 ondblclick="alert('you Clicked on h2')">Click here</h2>
+    <h2>demo on internal script</h2>	
+	<script type="text/javascript">
+	  document.write("msg from body");	
+	</script>
+	<br>
+	<script>
+	  document.write("msg2 from body");
+	</script>
+	<HR>
+	<!-- example on JS -->
+
+	<h2>demo on printing methods</h2>	
+	<script>
+	  window.document.write("html ");
+	  window.document.writeln("css ","bootstrap");
+	  window.console.log("javascript","typescript");
+	  
+	  console.error("invalid data")
+	  
+	  console.table( [10,20,30] );	
+	</script>
+	<hr>
+	<!--
+	string literal			  template literal
+=> " " & ' ' are SL		  => ` ` is TL
+=> SL rep string data	  => same
+=> JS1					  => since JS6 (ECAMScript)
+=> 1 line text			  => multiple lines of text
+=> not sup interpolation  => sup interpolation
+  Syn:	"text"				Syn:	`text`
+		'text'
+-->
+<script>
+  document.write("HTML");
+  document.write('CSS');
+  document.write(`Javascript`);
+  
+  console.log(`You should have received a copy of the 
+  GNU General Public License along with this program`);
+</script>
+<hr>
+  </body>
+</html>
+  </body>
+</html>

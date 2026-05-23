@@ -1,0 +1,56 @@
+<!-- html with js implementations -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS</title>
+	<meta charset="UTF-8"/>
+  </head>
+  <body>
+	<h2>password checking</h2> 
+	<label>Password</label><br>
+	<input type="password" id="pw" name="pw">
+	<br>
+	<input type="checkbox" id="cb" onchange="showPW()"> 
+	<label for="cb" id="lbw">Show Password</label>
+	<br> <br>
+	<label>Retype Password</label> <br>
+	<input type="password" id="rpw" name="rpw">
+	<br>
+	<button onclick="alert(pw.value===rpw.value? 'Password reset success': 'Both Password are not matching')">Reset Password</button>
+    <script>
+        function showPW(){
+          if(cb.checked==true){
+            pw.type='text';
+            lbw.textContent='hide passward';
+          }
+          else{
+           pw.type='password';
+            lbw.textContent='show passward';
+          }  
+        }
+    
+    </script>
+  </body>
+</html>
+<hr>
+<!-- html with js implementations -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS</title>
+	<meta charset="UTF-8"/>
+  </head>
+  <body>
+	<h2>password checking</h2>
+	<label>Password</label><br>
+	<input type="password" id="pw" name="pw">
+	<br>
+	<input type="checkbox" id="cb" onchange="pw.type= cb.checked?'text':'password'"> 
+	<label>Show Password</label>
+	<br> <br>
+	<label>Retype Password</label> <br>
+	<input type="password" id="rpw" name="rpw">
+	<br>
+	<button onclick="alert(pw.value===rpw.value? 'Password reset success': 'Both Password are not matching')">Reset Password</button>
+  </body>
+</html>

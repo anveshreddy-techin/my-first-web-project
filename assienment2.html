@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>registration</title>
+    <style>
+        div{
+            width:200px;
+            background-color: aqua;
+            color: red;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow:10px red;
+            font-family: Arial, sans-serif;
+            text-align:center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <label>Full name*</label><br>
+    <input type="text" placeholder="Enter your name" required><br><BR>
+    <label>Email*</label><br>
+    <input type="email" placeholder="Enter your email" required><br><br>
+    <label>Password*</label><br>
+    <input type="password" placeholder="Enter your password"required><br><br>
+    <label>Contact*</label><br>
+    <input type="tel" placeholder="Enter your contact number" min="6000000000" max="1000000000" required><br><BR>
+    <label>Age*</label><br>
+    <input type="number" placeholder="Enter your age" required><br><br>
+    <label>Enter date of birth:</label><br>
+    <input type="date" required><br>
+    <br>
+    <label>gender:</label><br>
+    <input type="radio" name="status" ><label>male</label>
+    <input type="radio" name="status"><label>female</label>
+    <input type="radio" name="status"><label>others</label>
+    <br><br>
+        <label>which course?</label><br>
+        <select>
+            <option value="select">java</option>
+            <option value="india">python</option>
+            <option value="usa">ui module</option>
+            <option value="uk">django</option>
+            </select>
+
+    <p>
+    <input type="checkbox" id="tc" required>
+    <label for="tc">agree to terms and conditions</label><br>
+    </p>
+    <input type="submit" value="Register">
+    <input type="reset" value="clear all">
+    </form>
+<hr>
+</body>
+</html>

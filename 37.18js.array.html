@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">		 	
+  <head>
+	<meta charset="UTF-8">
+   </head>	
+  <body>
+	<h3>demo on nested arrays</h3>
+	<script>
+	  const a=[
+				[10,20,30],
+				[11,22,33]
+			  ];
+			  
+	  document.write("A	"+a+"<br>");
+	  document.write("A[0]	"+a[0]+"<br>");
+	  document.write("A[1]	"+a[1]+"<br>");
+	  
+	  document.write(a.length+"<br>");
+	  document.write(a[0].length+"<br>");
+	  document.write(a[1].length+"<br>");
+	  
+	  for(let i=0; i<a.length; i++)
+	  {
+		for(let j=0; j<a[i].length; ++j)
+		  document.write(a[i][j]+" &nbsp; ");
+		
+		document.write("------------------------------------------------------------------------------------------<br>");
+	  }
+	  
+	  console.table(a);
+     // ______________________________________________________________________________________________________________________
+  
+	  const x=[
+				[10,20,30],
+				[true,false],
+				['cyan','red','blue','pink']
+			  ];
+			  
+	  document.write("X	"+x+"<br>");
+	  document.write("X[0]	"+x[0]+"<br>");
+	  document.write("X[1]	"+x[1]+"<br>");
+	  document.write("X[2]	"+x[2]+"<br>");
+	  
+	  for(let i=0; i<a.length; i++)
+	  {
+		for(let j=0; j<x[i].length; ++j)
+		  document.write(x[i][j]+" &nbsp; ");
+		
+		document.write("--<br>");
+	  }
+	  
+	  console.table(x);
+	
+ //-----------------------------------------------------------------------------------------------------------------------
+      const arr1=[10,20,30,40];
+	  
+	  for(let i  in  arr1){
+	    document.write(`${i} => ${arr1[i]}<br>`)
+	  }
+	  
+	  let str="welcome";
+	  for(let i  in  str)
+	    document.write(`${i} => ${str[i]}<br>`)
+	</script>
+	<h3>demo on for of loop</h3>
+	<script>
+      const arr3=[12,34,56,89];	
+	  
+	  for(let e  of  arr3)
+	    document.write(`${e} &nbsp; `);
+		
+      document.write(`<br>`);		
+	  
+	  for(let c  of  str)		
+	    document.write(`${c} &nbsp; `);
+	
+	  const n=[11,22,33];
+	  const b=[...a];  //copying array
+	  document.write(`a	${a}<br>`);
+	  document.write(`b	${b}<br>`);
+	  
+	  const a1=['html','css','js','bs'];
+	  const a2=['java','python','dot.net'];
+	  const a3=['oracle','mysql','mongodb'];
+	  
+	  const arr=[...a1,...a2,...a3];  //merge arrays
+	  document.write(`arr	${arr}<br>`);
+	  
+	  const arr2=[...a1,'react',...a2,'php'];
+	  document.write(`arr2	${arr2}<br>`);
+	
+	</script>  
+  </body>
+</html>

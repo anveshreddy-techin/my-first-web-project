@@ -1,0 +1,96 @@
+<!-- example on JS variables -->
+<h2>demo on var, let & const</h2>
+<mark>js7</mark><br>
+<script>
+  var a;	//var declaration
+  document.writeln(a);
+  a=100;	//assigning
+  document.writeln(a);
+  
+  var b=200;	//var initialization
+  document.writeln(b);
+  
+  let x;	//var dec
+  x=111;
+  document.writeln(x);
+  
+  let y=222;  //var init
+  document.writeln(y);
+  
+  a=101; //modifying
+  y=2020;
+  document.writeln(a," ",y);
+  
+  const PI=3.14;  
+  document.writeln(PI); 
+  //PI=1.6;	TE
+  //const N;  SE	
+</script>
+<hr>
+<mark>js8</mark>----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ <!-- example on JS variables -->
+<h3>demo on loosely typed & dynamically typed</h3>
+<script>
+  let n;
+  //loosely typed
+  n=10.56;	//n=20  or n=true  or n="ecam" or n=[11,22,33]  or n=new Date()
+  document.write(n,'<br>');
+  
+  y=45; //y is dynamically declared
+  document.write(y,'<br>');  //window.y
+  document.write(y*5,'<br>');
+  
+  st="ecam"; //st is dynamically declared
+  document.write(st,'<br>');	//window.st  
+</script>
+<hr>
+<mark>js9</mark>--------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!-- example on JS variables -->
+<h3>demo on re-defination & hoisting</h3>
+<script>
+   var u=100;
+   document.write(u, '<br>');
+   var u="ecam"; //re-defination
+   document.write(u, '<br>');
+   //let x=true;	SE
+   var u=true;  //re-defination
+   document.write(u, '<br>');   
+   
+   v=101;
+   document.write(v, '<br>');      
+   document.write(v+46, '<br>');   
+   var v;  //this var is hoisting
+   //let n;	RE (this var is not hoisting)
+   st="javascript";
+   document.write(st, '<br>');   
+   var st;  //this var is hoisting
+
+   document.write(z, '<br>');      
+   var z=111;  //its not hoisting
+</script>
+<hr>
+<mark>js10</mark><br>------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!-- example on JS variables -->
+<h3>demo on primitive datatypes</h3>
+<script>
+  var a=100;
+  var b=20.56;
+  let c=100n;
+  let d="ecam";
+  let e='x';
+  const F=true;
+  var g;
+  let h=null;
+
+  document.write(a," => ", typeof a, "<br>");
+  document.write(b," => ", typeof b, "<br>");
+  document.write(c," => ", typeof c, "<br>");
+  document.write(d," => ", typeof d, "<br>");
+  document.write(e," => ", typeof e, "<br>");
+  document.write(F," => ", typeof F, "<br>");
+  document.write(g," => ", typeof g, "<br>");
+  document.write(h," => ", typeof h, "<br>"); 
+  
+  </script> 
+  <hr>
+ 

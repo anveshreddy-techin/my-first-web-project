@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">		 	
+  <head>
+	<meta charset="UTF-8">
+   </head>	
+  <body>
+	
+<script>
+	  //sup to store diff types for eles
+	  let data=["siva",43,true,5.10,new Date()];
+	  document.write(data+"<br>");
+	  
+	  //dynamic array
+	  let l=[11,22,33,44,55,66,77,88,99];
+	  document.write(l+"<br>");
+	  l.length=5; //reduce size
+	  document.write(l+"<br>");
+	  l.length=7;  //incre size
+	  l[5]=10;
+	  l[6]=20;
+	  document.write(l+"<br>");	  
+
+	  //constant array
+	  const k=[12,34,56];
+	  document.write("k	"+k+"<br>");	  
+	  k[1]=77;  //modification
+	  k[3]=88;
+	  document.write("k	"+k+"<br>");	  
+	  //k=[100,200,300];	error
+	  
+	  //runtime values
+	  const m=[];
+	  let n=+prompt("enter no of elements");
+	  
+	  for(let i=0; i<n; i++)
+	    m[i]=prompt("enter value");
+		
+	  document.write("M	"+m);	 
+	
+	</script>  
+  </body>
+</html>
+
+	 

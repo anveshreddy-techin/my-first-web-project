@@ -1,0 +1,74 @@
+<!-- child selector
+=>used to defined/to apply same styles for child, grand childs... positiones elements
+  Syn: 	
+	gptag  ptag  ctag{
+	   prop:value;
+	   ......
+	} -->
+       
+    <!--
+direct child selector
+=>used to defined/to apply same styles for child positioned elements
+  Syn: 	
+	gptag > ptag > ctag{
+	   prop:value;
+	   ......
+	}
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>12.4CSS</title>
+	<style>
+	  div > a{
+	    color:green;
+	    text-decoration:none;
+	  }
+	  ul > li > a{
+	    color:red;
+	  }  
+	</style>
+    <!-- 2nd example -->
+<style>
+[type="text"]{color:red}
+[type="number"]{color:yellowgreen ;text-align:right}
+</style>
+  </head> 
+  <body >
+	<h2>demo on direct child  selector</h2>
+	<a href="">goto page1</a> <br>
+	<a href="">goto page2</a> <br>
+	<div>
+		<a href="">goto page3</a> <br>
+		<a href="">goto page4</a> <br>
+		<a href="">goto page5</a> 
+		<p>
+		  <a href="">goto page6</a> <br>
+		  <a href="">goto page7</a>
+		</p>
+	</div>
+	
+	<ul>
+		<li> <a href="">goto page11</a> </li>
+		<li> <a href="">goto page12</a> </li>
+		<a href="">goto page13</a> <br>
+		<a href="">goto page14</a> <br>
+	</ul>
+     <!-- 2nd example -->
+    <input type="text" ><BR>
+    <input type="number"><BR>
+        <input type="number"><BR>
+    <input type="password">
+
+
+	
+  </body>
+</html>
+<br>
+*
+<!-- _color--clours....
+_text-align---center ,right,etc.....
+_text-decoration---remove underline and etc.... -->
+
+</text-al>

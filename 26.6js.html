@@ -1,0 +1,37 @@
+<!-- html & js implementations -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h2>finding sum of 2 number</h2>
+	<label for="fn">First number</label> <br>
+	<input type="text" id="fn"> <br>
+	<label for="sn">Second number</label> <br>
+	<input type="text" id="sn"> <br>
+	<button onclick="addition()">Addition</button>
+	<br>
+	<output id="op"></output>
+	
+	<script>
+	  //defining fun
+	  function addition()
+	  {
+		let x,y,s;	//local vars
+		
+		//data collection 
+		x=+fn.value;
+		y=+sn.value;
+
+		s=x+y; //calc's
+		
+		//displaying op
+		//document.write('Sum is '+s);
+		//console.log('Sum is ',s);
+		//alert("Sum is "+s);
+		op.value="Sum is "+s;
+	  }	
+	</script>  
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<hr>
+<!-- example on JS control statements -->---------------------------------------------------------------------
+<h3>demo on while loop 28</h3>
+<script>
+  //to print 1 to 20 numbers
+  let z=1;  //initval
+  while(z<=20) //condition
+  {
+	document.writeln(z);
+    z++;  //incre
+	//++i	i=i+1		i+=1
+  }
+</script>
+<h3>demo on for loop</h3>
+<script>
+  //to print 1 to 20 numbers
+  for(let j=1; j<=20; j++)  //j is block var
+  {
+	document.writeln(j);
+  }
+  //document.write(j);	err
+</script>
+<h3>demo on do while loop</h3>
+<script>
+  //to print 1 to 20 numbers
+  let k=1;
+  do{
+	document.writeln(k);
+	++k;
+  }while(k<=20);  
+</script>
+<hr>-------------------------------------------------------------------------------------------------------------
+<!-- example on JS control statements -->
+<!-- example on JS control statements -->
+<h3>29 demo on continue & break </h3>
+<script>
+  let a=+prompt("enter n value");
+  
+  for(let i=1; i<=a; i++)
+  {
+    if(i%4===0)	//(i===3||i===8||i===15)
+	   continue;	//break;
+	   
+    document.writeln(i);
+  }
+</script>

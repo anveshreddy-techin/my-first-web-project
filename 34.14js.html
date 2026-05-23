@@ -1,0 +1,42 @@
+<!--
+interpolation
+=> its a process to sub value/expr/fun call dynamically between string(text)
+=> used  in two cases -> while print data, assigning data
+=> since JS6
+=> template literal
+Syn:-			`${var}`	or	`${expr}`		or	`${fun call}`
+					`text ${var} text ${expr} text ${fun} ...`
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Js35</title>
+ </head>
+ <body>
+	<h2>demo on interpolation</h2>
+	<script>
+		let n = prompt("enter name");
+		document.write(n+"<br>");
+		document.write(`${n}<br>`);
+
+		document.write("sum is 10+20<br>");
+		document.write(`sum is ${10+20}<br>`);
+		document.write("sum is ${10+20}<br>");
+
+		let m = `Hi ${n}`;
+		document.write(`${m}<br>`);
+		let x=10, y=7;
+		let res = `Sum is ${x+y}<br>
+							Sub is ${x-y}<br>
+							Product is ${x*y}<br>`;
+
+		document.write(res);
+
+		n=10;
+		for(i=1; i<=10; i++) {
+			document.write(`${n}*${i}=*${n*i}<br>`);
+		}
+	</script>
+ </body>
+</html>

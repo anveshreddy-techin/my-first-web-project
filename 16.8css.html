@@ -1,0 +1,170 @@
+<!--
+flex => used to display elements either row or column format 
+
+grid => used t
+ 
+ flex application -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flex App</title>
+	<link rel="stylesheet" href="flexapp.css">
+<style>
+
+    .container{
+        /* store data in container as ex; .flex-box  */
+  background:skyblue;	
+  padding:15px;
+}
+
+.heading{
+    /* heading of the container */
+  font-size:110%;
+  font-family:tahoma;  
+}
+
+.flex-box{
+    /* flex-box is used to display elements in a row or column format 
+        inside the container*/
+  display:flex;  /*horizotal row */
+    flex-direction:row; /*order */
+		/*row-reverse, column, column-reverse */
+	flex-wrap:wrap;	/* nowrap */
+	/* gap:100px; */
+	/* justify-content:start/end/center; */
+	justify-content:space-evenly;
+	  /* space-betwee = remspace/n-1 =>100/3=33.33px
+	  space-evenly = remspace/n+1 => 100/5=20px
+	  space-around = remspace/n => 100/4=25px
+	  */
+  padding:25px 0;	  
+}
+
+
+.flex-item{
+    /* flex-item is used to display elements inside the flex-box */
+  background:#FFF;
+  width:20%;
+  border-radius:15px;
+  box-shadow:0 0 10px greenyellow;
+  padding:8px;
+  text-align:center;
+  transition:200ms;
+}
+
+.flex-item img{
+  width:100%;
+  height:260px;
+}
+.flex-item h2{
+  color:#00F;
+  font-size:22px;
+}
+.price{
+  font-size:20px;
+  color:green;
+}
+.flex-item:hover{
+  /* background:teal; */
+  box-shadow:0 0 20px red ;
+  transform:scale(1.05);
+}
+</style>
+    <link rel="stylesheet" href="flexapp.css">
+</html>
+  </head> 
+  <body>
+  
+	<div class="container">
+	  <div class="heading">
+	    <h2>Top smartphone deals for you</h2>
+	  </div>
+	  <!-- flex -->
+	  <div class="flex-box">
+		<!-- flex items -->
+		<div class="flex-item">
+		  <img src="images/2a.jpg" alt="Nothing 2a">
+		  <h2>Nothing Phone 2a Plus (Grey)</h2>
+		  <div>
+			<span class="price">&#8377;22,498.00</span>
+			&nbsp; M.R.P: <del>&#8377;29,999.00</del>
+		  </div>		  
+		</div>
+		<!-- flex items -->
+		<div class="flex-item">
+		  <img src="images/13pro.jpg" alt="13Pro">
+		  <h2>realme 13 Pro 5G (Monet Gold)</h2>
+		  <div>
+			<span class="price">&#8377;19,150.00</span>
+			&nbsp; M.R.P: <del>&#8377;28,999.00</del>
+		  </div>		  
+		</div>		
+		<!-- flex items -->
+		<div class="flex-item">
+		  <img src="images/3a.jpg" alt="Nothing 3a">
+		  <h2>Nothing Phone 3a (Black)</h2>
+		  <div>
+			<span class="price">&#8377;25,699.00</span>
+			&nbsp; M.R.P: <del>&#8377;29,999.00</del>
+		  </div>		  
+		</div>		
+		<!-- flex items -->
+		<div class="flex-item">
+		  <img src="images/k12x.jpg" alt="K 12x">
+		  <h2>Oppo K12x 5G (Breeze Blue)</h2>
+		  <div>
+			<span class="price">&#8377;13,599.00</span>
+			&nbsp; M.R.P: <del>&#8377;16,999.00</del>
+		  </div>		  
+		</div>	
+	  </div>	
+	</div>
+	<br>
+		<div class="container">
+	  <div class="heading">
+	    <h2>Top smartphone deals for you</h2>
+	  </div>
+	  <!-- flex -->
+	  <div class="flex-box">
+		<!-- flex items -->
+		<div class="flex-item">
+		  <img src="images/2a.jpg" alt="Nothing 2a">
+		  <h2>Nothing Phone 2a Plus (Grey)</h2>
+		  <div>
+			<span class="price">&#8377;22,498.00</span>
+			&nbsp; M.R.P: <del>&#8377;29,999.00</del>
+		  </div>		  
+		</div>
+		<!-- flex items -->
+		<div class="flex-item">
+		  <img src="images/13pro.jpg" alt="13Pro">
+		  <h2>realme 13 Pro 5G (Monet Gold)</h2>
+		  <div>
+			<span class="price">&#8377;19,150.00</span>
+			&nbsp; M.R.P: <del>&#8377;28,999.00</del>
+		  </div>		  
+		</div>		
+		<!-- flex items -->
+		<div class="flex-item">
+		  <img src="images/3a.jpg" alt="Nothing 3a">
+		  <h2>Nothing Phone 3a (Black)</h2>
+		  <div>
+			<span class="price">&#8377;25,699.00</span>
+			&nbsp; M.R.P: <del>&#8377;29,999.00</del>
+		  </div>		  
+		</div>		
+		<!-- flex items -->
+		<div class="flex-item">
+		  <img src="images/k12x.jpg" alt="K 12x">
+		  <h2>Oppo K12x 5G (Breeze Blue)</h2>
+		  <div>
+			<span class="price">&#8377;13,599.00</span>
+			&nbsp; M.R.P: <del>&#8377;16,999.00</del>
+		  </div>		  
+		</div>	
+	  </div>	
+	</div>
+	<br>
+	
+  </body>
+</html>

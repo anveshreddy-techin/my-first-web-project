@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS</title>
+	<meta charset="UTF-8"/>
+	<style>
+	  img{
+	    width:250px;
+		height:250px;
+		margin:90px;
+		transition:500ms;
+	  }
+	  .i1:hover{ transform:scaleX(1.6); }
+	  .i2:hover{ transform:scaleY(1.4); }
+	  .i3:hover{ transform:scale(1.2); }
+	  
+	  .i4:hover{ transform:skewX(25deg); }
+	  .i5:hover{ transform:skewY(-50deg); }
+	  .i6:hover{ transform:skew(30deg,-25deg); }
+	  
+	  .i7:hover{ transform:translateX(150px); }
+	  .i8:hover{ transform:translateY(150px); }
+      .i9:hover{ transform:translate(100px,100px); }
+	  
+	  .i10:hover{ transform:rotateX(45deg); }
+	  .i11:hover{ transform:rotateY(60deg); }
+	  .i12:hover{ transform:rotate(720deg); }
+	  
+	  .i13:hover{
+	    transform:scale(0.3) rotate(360deg);
+	  }
+	  h1{ 
+		text-align:center;
+	    transition:0.3s; 
+	  }
+	  h1:hover{
+	    font-size:50px;
+		transform:skew(10deg,15deg);
+	  }
+	</style>
+  </head>
+  <body>
+	<h1>demo on transform</h1>
+	<img src="images/rose.jpeg" class="i1">
+	<img src="images/baby.jpg" class="i2">
+	<img src="images/abc.webp" class="i3">
+	<img src="images/bridge.jpg" class="i4">
+	<img src="images/building.jpg" class="i5">
+	<img src="images/photo.png" class="i6">
+	<img src="images/cave.jfif" class="i7">
+	<img src="images/owl.webp" class="i8">
+	<img src="images/girl.webp" class="i9">
+	<img src="images/monkey.jpeg" class="i10">
+	<img src="images/moon.jpg" class="i11">
+	<img src="images/honda.jfif" class="i12">
+	
+	<img src="images/tenor.gif" class="i13">
+	
+  </body>
+</html>

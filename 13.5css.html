@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13.5css</title>
+   * <!-- two types : 1)pseudo classes  2)pseudo elements -->
+    <!-- 1} pseudo classes :-- applied to all
+     ex: visited, hover , active , focus , blur , first_child , last_ child , nth _child...........
+ -->
+     <!-- 2}pseudo elements:--aplly to specific
+     ex: h2:: , [type=""]:: , p:: - first-letter, p:: -first-line ,ol li:: , ul li:: ,
+      -->
+     <style>
+    :visited{
+         COLOR:green;
+    }
+   h2:hover{
+        color:aqua;
+    }
+    :active{
+        color:brown;
+    }
+    :focus{
+        color:orange;
+    }
+    h2::before{CONTENT:"Hi "}
+    h2::after{ content:"👌"}
+    [type="text"]::placeholder{color: blue;  text-align: center;}
+    [type="password"]::placeholder{color: rgb(255, 0, 208);  text-align: center;}
+    p::first-letter{ background: black;color: aliceblue;}
+    p::first-line{color: blueviolet;}
+    ol li::marker{color: orange;}
+    ul li::marker{color: greenyellow;}
+    ::selection{ background: mediumseagreen ;color:hotpink;}
+
+
+</style>
+</head>
+<body>
+    <input type="text"><br>
+    <input type="password"><br>
+    <a href="/12.4css.html">go to the 4.css</a>
+    <a href="/11.3css.html">go to the 5.css</a>
+    <hr>
+    <h2>html</h2>
+    <h2>css</h2>
+    <h2>python</h2>
+      <p>new format of the FIFA Club 
+	  World Cup has entered its knockout stage and 
+	  has produced an absolute cracker of a contest that 
+	  may otherwise never have graced the screens of football fans.
+	  Lionel Messi’s Inter Miami</p>
+      <ol>
+        <li>google</li><li>microsoft</li>
+       </ol>
+       <ul> 
+        <li>broser</li><li>amazon</li>
+      </ul>
+
+</body>
+</html>
